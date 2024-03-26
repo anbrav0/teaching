@@ -1,0 +1,102 @@
+# updated 2024-03-26
+
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+*.RData
+
+
+# RStudio files
+.Rproj.user
+.Rproj.user/
+
+# R Environment Variables
+.Renviron
+
+# R projects 
+*.Rproj
+
+
+# Exclude Text
+*.txt
+*.Txt
+*.TXT
+
+# Exclude Excel
+*.xlsx
+*.xls
+
+# R data
+*.rds
+*.RDS
+*.Rds
+*.rda
+*.RDA
+*.Rda
+
+# csv data
+*.csv
+*.CSV
+*.Csv
+
+# sas data
+*.sas7bdat
+*.sas7bcat
+
+# SPSS data
+*.sav
+*.SAV
+*.Sav
+
+# SPSS output
+*.spv
+*.SPV
+*.Spv
+
+# STATA data
+*.dta
+*.DTA
+*.Dta
+
+# STATA log files
+*.log
+*.LOG
+*.Log
+*.smcl
+*.SMCL
+*.Smcl
+
+# Archives
+*.zip
+*.Zip
+*.ZIP
+
+# Directories
+docs/
+data/
+development/
+macros/
+output/
+raw_data/
+R_resources/
+images/
+
+
+
+
+# png /jpeg files 
+*.png
+*.jpeg
+.Rdata
+.httr-oauth
+.DS_Store
+.quarto
+.tiff
+*.pdf
+*.tex
+
+# misc
+SNA_EgoCentric_data.docx

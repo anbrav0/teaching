@@ -1,0 +1,311 @@
+---
+title: "Social Network Analysis: Data collection Instruments for Egocentric Networks"
+subtitle: "Community Based Participatory Research"
+author: "Ana Bravo"
+date: now
+format:
+  revealjs: 
+    theme: simple
+    scrollable: true
+    slide-number: true
+editor: source
+---
+
+## Objectives
+
+-   Understand ego-centric data and the different data types
+-   To understand the different major components of ego-centric (personal network data)
+-   To understand the different types of data collection instruments (focus Network Canvas)
+-   Understand the majory features and components of Network Canvas
+-   Live demonstration of a Network Canvas Social Network protocol
+
+# Ego-centric Data
+
+## Ego-centric Data Types
+
+-   Ego-centric (sometimes called personal network) data typically involves three main data types:
+
+::: panel-tabset
+### Ego-level
+
+Data about the respondent *(the ego)*. which consists of each row as the participants/ego response and each column represents a variable of characteristic of the ego (e.g., egos age, BMI, smoking status etc.)
+
+![](ego_data.PNG){fig-align="center" width="552"}
+
+### Alter-level
+
+Which consist of the egos nominated alters attributes (e.g., alter age, ethnicity etc.) and ego-alter attributes (e.g., closeness to alter, frequency of meeting etc.)
+
+![](alter_data.PNG){fig-align="center" width="540"}
+
+### Alter-alter data
+
+Data that includes the alter-alter ties as reported by ego. This is also called an “edge list” or can be described as an adjacency matrix. For example:
+
+-   alter 1 and alter 2 know each other.
+
+-   alter 1 and alter 2 meet when ego is not there.
+
+-   alter 1 and alter 2 have shared a meal together.
+
+![](alter_alter_data.PNG){fig-align="center" width="259"}
+:::
+
+::: {style="font-size:15px"}
+# *In ego-centric (also called personal networks) data, alters can only belong to one ego, and alter-alter ties only exist between alters that were nominated by the same ego. In other words, in this type of analysis, there is no long or overlap between the different networks of different egos.*
+
+```{r}
+
+library(igraphdata)
+library(ggraph)
+library(patchwork)
+library(graphlayouts)
+data("karate")
+
+
+p1 <- ggraph(karate, layout = "focus", focus = 1) +
+  draw_circle(use = "focus", max.circle = 3) +
+  geom_edge_link0(edge_color = "black", edge_width = 0.3) +
+  geom_node_point(aes(fill = as.factor(Faction)), size = 2, shape = 21) +
+  scale_fill_manual(values = c("#8B2323", "#EEAD0E")) +
+  theme_graph() +
+  theme(legend.position = "none") +
+  coord_fixed() +
+  labs(title = " Ego Network UM1010")
+
+
+p2 <- ggraph(karate, layout = "focus", focus = 34) +
+  draw_circle(use = "focus", max.circle = 4) +
+  geom_edge_link0(edge_color = "black", edge_width = 0.3) +
+  geom_node_point(aes(fill = as.factor(Faction)), size = 2, shape = 21) +
+  scale_fill_manual(values = c("#8B2323", "#EEAD0E")) +
+  theme_graph() +
+  theme(legend.position = "none") +
+  coord_fixed() +
+  labs(title = "Ego Network UM1034")
+
+# Patch work 
+p1 + p2
+
+```
+:::
+
+# Data Collection Methods 👩‍💻
+
+## Data Collection Types
+
+-   Social network analysis (SNA) is a growing field and there are many different data collection software, which you can check out a list of different data collect software [here.](https://raffaelevacca.github.io/Open-social-network-surveys/)
+-   However, for today we will focus on [Network Canvas.](https://networkcanvas.com/)
+
+![](network_canvas.PNG){fig-align="center"}
+
+## More about Network Canvas
+
+Network Canvas (NC) is a data collection software, specifically tailored to handle social network data. It has different capability to support the major components of personal network projects as well as the flexibility to adapt to different study designs.
+
+-   It is free and open source.
+
+-   It is intuitive and user friendly.
+
+-   Their development community is open to feedback and suggestions.
+
+    -   you can communicate with their development team through their [community forums.](https://community.networkcanvas.com/)
+
+-   It works well with major data wrangling software. (like Python and R)
+
+## Major Protocol Builders
+
+Network Canvas has three main survey builders:
+
+::: panel-tabset
+### Architect
+
+Primary investigators and researchers ability to build their Social Network protocol. (e.g., This is where the researcher can define the different data types and the different questions.)
+
+![](architect_trimed.gif){fig-align="center" width="503"}
+
+### Interviewer
+
+Deploy and run the network canvas interview. (e.g., This is where the research assistant and the participant complete the protocol)
+
+![](interviewer_trimmed_2.gif){fig-align="center" width="544"}
+
+### Server
+
+Central hub to keep multiple network canvas protocols updated.
+
+-   The Network Canvas (NC) team is expecting to launch a *“studio”* version, to be able to support for longitudinal project designs in 2-3 years, so this workflow may change.
+
+-   We will not be talking about server today, as the typical way for social network researchers to use Network Canvas is through the architect and interviewer software.
+
+![](architect_interviewer_workflow.png){fig-align="center" width="460"}
+:::
+
+# Personal Network Data Collection Fundamentals 🧑‍🤝‍🧑
+
+## Components of Network Canvas
+
+::: {style="font-size:29px"}
+-   When collecting personal network data, there is a few fundamental data types that researchers are interested in collecting.
+
+-   The way that network canvas is structured, it tried to capture social network data in its most fundamental way, by capturing nodes and edge attributes. To collect this type of data there are *generally* 3-4 main components needed:
+:::
+
+::: panel-tabset
+### Ego Form
+
+-   Ability for NC to collect ego only attributes (ego age, BMI, smoking status, etc.)
+-   This type of data can be collected via NC, but it can also be collected via other survey software. My favorite, in my opinion the golden standard, is REDCap. Keep in mind that REDCap does not support network data as NC does, but it is great when you're interested in collecting ego data.
+    -   for example: mental health scales like MACVS, PTSD scales, demographic information.
+
+![](ego_form_trimmed.gif){fig-align="center" width="545"}
+
+### Nodes
+
+Name Generator
+
+-   NC ability to produce *nodes* (e.g., alters) that the ego can nominate in their personal network.
+-   This allows for building out the personal network. There are different name generator form types (depending on your data needs) such as quick add per network, quick add per alter, using roasters for recall)
+    -   *"Think about the people you know: Who are the people in which you discuss personal matters with? List up to 13 individuals."*
+
+![](name_generator_trimmed.gif){fig-align="center" width="551"}
+
+### Alter-ego
+
+Alter Ego Attributes
+
+-   NC ability to capture alter-ego *dynamics.* (e.g., closeness, frequency of contact, etc.)
+
+-   NC supports the ability to capture ordinal categorical type data.
+
+![](alter_ego_trimmed.gif){fig-align="center" width="545"}
+
+### Socio-gram
+
+-   Allowed for providing a participant led lay out (participant provide input) personal network mechanism building.
+
+-   Allows for different alter-alter tie connections.
+
+    -   sociogram is one type of method to building personal networks, there are other types that are support by network canvas, such as dyad-census (which goes through every possible dyad connection to build the ties)
+
+        ![](socio_gram_connection.gif){fig-align="center" width="522"}
+
+![](dyad_census.png){fig-align="center" width="512"}
+:::
+
+# Possible Research Questions 🤔
+
+## Research Questions
+
+-   This largely depends on your research of interest; however, you can collect different alter attributes such as egos perception of their alters age, emotional closeness, etc. NC is very flexible and can almost support any type of question of interest.
+
+-   This also depends on having some forethought about the *type* of data you might want to collect
+
+    -   What are some of the data types you are expecting to collect?
+
+    -   What input controls (more on that later) would be best to use to visualize the protocol?
+
+        -   You can ask questions like
+
+            -   contact frequency
+
+            -   perceived age
+
+            -   disclosure of HIV status
+
+            -   likelihood to talk about PrEP in the next 6 months
+
+## Input control
+
+ability to modify the way in which the data will be collected:
+
+-   name (text field)
+
+-   age (calendar type)
+
+![](input_control.png){fig-align="center" width="570"}
+
+## Variable Types
+
+-   Network Canvas has support for many types of variables:
+    -   **Text** Basic short text string,
+    -   **Number** Basic whole number (integer),
+    -   **Ordinal** Ordered categorical data, where each value is described by a label and a value. Only supports single values,
+    -   **Categorical** Unordered categorical data where each value is described by a label and a value. Supports multiple values.
+    -   **Boolean** True or False values,
+    -   **Layout** X/Y coordinate values, normalized between 0 and 1 in each axis.
+    -   **DateTime** Date variable capable of storing resolution down to the day.
+    -   **Scalar** A continuous floating point number between 0 and 1
+
+## Edge Types
+
+-   Network Canvas also supports different edge types, which can be used to capture different types of relationships between alters.
+
+![](dif_edge_types.PNG){fig-align="center"}
+
+# Recommended Social Network Workflow
+
+## Recommended Workflow for assiging data
+
+Typical creation of a network canvas protocol is:
+
+-   create a Stage based on whether you are collecting Ego, Node, or Edge data
+-   Include the type of ego, node, or edge data
+-   Create a variable for that data (e.g., ego_age, closeness, ego_BMI)
+-   Add a prompt (or a script) for that variable
+-   Select an input control (calendar, text field, etc.)
+
+## Burden Reduction
+
+-   In all human subject research (HSR), especially in epidemiological designs with complicated protocols, there’s always a give-and-take regarding burden level. This is something to always keep in mind when conducting HSR, and therefore important to implement in any protocol workflow.
+
+-   Tactics to reduce protocol burden includes skip logic:
+
+::: {.column width="100%"}
+![](skip_logic.PNG){fig-align="center" width="700"}
+:::
+
+## General Project work flow
+
+::: {.column width="100%"}
+![](NC_functionality_example.gif){fig-align="center" width="692"}
+:::
+
+This short demo shows the general characteristics discussed today on how to collect social network data name generator, dyadic dynamic questionnaire (relationship about ego and dyad) and the ability to build alter-alter ties.
+
+## Resources
+
+-   There are many great resources for collecting sound protocol measures using NC, one of them being directly from the NC team:
+    -    [Conducting Personal Network Research with Network Canvas](https://www.youtube.com/watch?v=3EZAnB9_-cA)
+    -    [Working with Network Canvas data in R](https://documentation.networkcanvas.com/tutorials/working-with-data/)
+-   And others resource from Social network scientists:
+    -    [Ego Centric Network Analysis with R](https://raffaelevacca.github.io/egocentric-r-book/index.html)
+    -    [Network Visualization using R](http://talks.schochastics.net/netVizR/slides.html#1)
+
+# Live Demo 🧑‍🔧
+
+
+## Overview 
+
+Today you learned: 
+
+- The basics of ego centric data types
+
+- Data collection methods
+
+- a gentle introduction on how to build a NC protocol 
+
+- Different components of the Network Canvas software
+
+- Recommended workflow for data types 
+
+
+# Thank you! 🙏
+
+
+# References
+
+WIP
+
+
+
