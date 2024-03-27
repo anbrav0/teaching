@@ -354,7 +354,7 @@ Today you learned:
 
 -   Recommended workflow for build a social network protocol.
 
-# Thank you! 🙏
+
 
 ## References and Acknowledgements 📚
 
@@ -371,3 +371,9 @@ Today you learned:
 -   [Egocentric Network Analysis: Foundations, Methods, and Models](Egocentric%20Network%20Analysis:%20Foundations,%20Methods,%20and%20Models)
 
 -   [Conducting Personal Network Research: A Practical Guide](https://www.amazon.com/Conducting-Personal-Network-Research-Methodology/dp/146253838X/ref=asc_df_146253838X/?tag=hyprod-20&linkCode=df0&hvadid=333955095017&hvpos=&hvnetw=g&hvrand=804285928416711888&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9011913&hvtargid=pla-680457968138&psc=1&mcid=4d4405c4a53e3894beb8085ea15a6e0a&tag=&ref=&adgrpid=64524924422&hvpone=&hvptwo=&hvadid=333955095017&hvpos=&hvnetw=g&hvrand=804285928416711888&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9011913&hvtargid=pla-680457968138&gclid=CjwKCAjwh4-wBhB3EiwAeJsppN_cEICV242dZ3tGxrHeLfKqaZh76H-s6jmez8BJ5sAKu8wfmnTyFRoCzhEQAvD_BwE)
+
+
+# Thank you! 🙏
+
+
+
