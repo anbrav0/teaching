@@ -294,10 +294,8 @@ You can check out the Network Canvas recommended protocol building workflow [her
 Generally, when running the protocol with a potential participant, the process would look something like this:
 
 ::: {.column width="100%"}
-![This short demo shows the general workflow characteristics discussed today on how to collect social network data that includes: name generator, dyadic dynamic questionnaire, (closeness frequency of meeting),  and the ability to build alter-alter ties, or the sociograms.](NC_functionality_example.gif){fig-align="center" width="692"}
+![This short demo shows the general workflow characteristics discussed today on how to collect social network data that includes: name generator, dyadic dynamic questionnaire, (closeness frequency of meeting), and the ability to build alter-alter ties, or the sociograms.](NC_functionality_example.gif){fig-align="center" width="692"}
 :::
-
-
 
 ## Resources
 
@@ -308,10 +306,39 @@ Generally, when running the protocol with a potential participant, the process w
     -   [Ego Centric Network Analysis with R](https://raffaelevacca.github.io/egocentric-r-book/index.html)
     -   [Network Visualization using R](http://talks.schochastics.net/netVizR/slides.html#1)
 
+## A Network Canvas Protocol Example
 
+*A two mode approach*
+
+::: {style="font-size:30px"}
+-   We are going to be looking at a Network Canvas Protocol example that was built for the `LatiNET` study.
+
+-   `LatiNET` is a multi-level study using a social network approach to examine how COVID-19 misinformation and conspiracy theories impact Latino vaccine hesitancy across 5 domains:
+
+    -   Friends
+
+    -   Family
+
+    -   Work
+
+    -   Health Services
+
+    -   Influences
+
+-   `LatiNET` covers the social network project fundamentals, like name generators, and questionnaires regarding the relationships with nominated alters.
+
+    -   Personal network data typically measures data at the “micro-level” (e.g., between dyads), and with these relationships, we are able to make inferences about about these relationships at the “macro-level”
+
+    -   A *two-mode* approach, describes ties between two nodes at different levels of analysis. In other words, affiliation or relationship to structures. So nodes/egos affiliation to their macro structure (in the `LatiNET` case, health services, influences (e.g., political, social etc.) and community channels.
+
+    -   A two mode approach helps researchers understand the macro-micro dynamics and help control for societal structures that impact observed relationships, like structural racism.
+
+        -   in the `LatiNET` study, a two-mode approach helps us understand how egos affiliation or relationship with different media outlets may impact their relationship with vaccines.
+
+-   This is the idea of network data, in which individuals are "nested" *within* larger structures, and those larger structures are nester *within* even larger structures.
+:::
 
 # Live Demo 🧑‍🔧
-
 
 ## Overview
 
@@ -327,31 +354,20 @@ Today you learned:
 
 -   Recommended workflow for build a social network protocol.
 
-
-
 # Thank you! 🙏
-
 
 ## References and Acknowledgements 📚
 
-- [Network Canvas Team Resources](https://documentation.networkcanvas.com/tutorials/building-a-protocol/)
+-   [Network Canvas Team Resources](https://documentation.networkcanvas.com/tutorials/building-a-protocol/)
 
-- [Ego Centric Network Analysis with R](https://raffaelevacca.github.io/egocentric-r-book/)
+-   [Ego Centric Network Analysis with R](https://raffaelevacca.github.io/egocentric-r-book/)
 
- 
- - [Network Visualization in R: Using ggraph and graphlayouts](http://talks.schochastics.net/netVizR/slides.html#1)
+-   [Network Visualization in R: Using ggraph and graphlayouts](http://talks.schochastics.net/netVizR/slides.html#1)
 
+-   [ggraph: A grammar of graphics for relational data](https://ggraph.data-imaginist.com/)
 
-- [ggraph: A grammar of graphics for relational data](https://ggraph.data-imaginist.com/)
+-   [R4SNA](https://schochastics.github.io/R4SNA/descriptives-basic.html)
 
+-   [Egocentric Network Analysis: Foundations, Methods, and Models](Egocentric%20Network%20Analysis:%20Foundations,%20Methods,%20and%20Models)
 
-- [R4SNA](https://schochastics.github.io/R4SNA/descriptives-basic.html)
-
-
-- [Egocentric Network Analysis: Foundations, Methods, and Models](Egocentric Network Analysis: Foundations, Methods, and Models)
-
-- [Conducting Personal Network Research: A Practical Guide](https://www.amazon.com/Conducting-Personal-Network-Research-Methodology/dp/146253838X/ref=asc_df_146253838X/?tag=hyprod-20&linkCode=df0&hvadid=333955095017&hvpos=&hvnetw=g&hvrand=804285928416711888&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9011913&hvtargid=pla-680457968138&psc=1&mcid=4d4405c4a53e3894beb8085ea15a6e0a&tag=&ref=&adgrpid=64524924422&hvpone=&hvptwo=&hvadid=333955095017&hvpos=&hvnetw=g&hvrand=804285928416711888&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9011913&hvtargid=pla-680457968138&gclid=CjwKCAjwh4-wBhB3EiwAeJsppN_cEICV242dZ3tGxrHeLfKqaZh76H-s6jmez8BJ5sAKu8wfmnTyFRoCzhEQAvD_BwE)
-
-
-
-
+-   [Conducting Personal Network Research: A Practical Guide](https://www.amazon.com/Conducting-Personal-Network-Research-Methodology/dp/146253838X/ref=asc_df_146253838X/?tag=hyprod-20&linkCode=df0&hvadid=333955095017&hvpos=&hvnetw=g&hvrand=804285928416711888&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9011913&hvtargid=pla-680457968138&psc=1&mcid=4d4405c4a53e3894beb8085ea15a6e0a&tag=&ref=&adgrpid=64524924422&hvpone=&hvptwo=&hvadid=333955095017&hvpos=&hvnetw=g&hvrand=804285928416711888&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9011913&hvtargid=pla-680457968138&gclid=CjwKCAjwh4-wBhB3EiwAeJsppN_cEICV242dZ3tGxrHeLfKqaZh76H-s6jmez8BJ5sAKu8wfmnTyFRoCzhEQAvD_BwE)
