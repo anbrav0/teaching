@@ -1,6 +1,6 @@
 ---
-title: "Social Network Analysis: Data collection Instruments for Egocentric Networks"
-subtitle: "Community Based Participatory Research"
+title: "Data collection Instruments for Egocentric Networks"
+subtitle: "EPH 647: Community Based Participatory Research and Social Network Analysis"
 author: "Ana Bravo"
 date: now
 format:
@@ -8,6 +8,7 @@ format:
     theme: simple
     scrollable: true
     slide-number: true
+css: light.css
 editor: source
 ---
 
