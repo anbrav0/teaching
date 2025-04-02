@@ -23,7 +23,6 @@ editor: source
 
 -   Live demonstration of a Network Canvas Social Network protocol.
 
-# Ego-centric Data 🙆‍♂️
 
 ## Before getting started
 
@@ -43,6 +42,8 @@ editor: source
     
     
 - REDCap, IMHO is the golden standard to collect participant level data, but it does not support when the data is nested (e.g., alters, alter-alter data)
+
+# Ego-centric Data 🙆‍♂️
 
 ## Ego-centric Data Types
 
