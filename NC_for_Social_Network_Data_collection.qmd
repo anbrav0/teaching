@@ -1,6 +1,6 @@
 ---
-title: "Data collection Instruments for Egocentric Networks"
-subtitle: "EPH 647: Community Based Participatory Research and Social Network Analysis"
+title: "Data Collection Methods: Using Network Canvas for Social Network Data Collection"
+subtitle: "EPH 647 CBPR and Social Network Analysis"
 author: "Ana Bravo"
 date: now
 format:
@@ -14,17 +14,35 @@ editor: source
 
 ## Objectives
 
--   Understand Ego-centric data and the different data types.
 
--   To understand the different major components of ego-centric (personal network) data.
+-   Understand the different major components of ego-centric (personal network) data.
 
--   To understand the different types of data collection instruments (focus Network Canvas)
+-   Understand Network canvas, as a data collection software for social network data.
 
 -   Understand the major features and components of Network Canvas.
 
 -   Live demonstration of a Network Canvas Social Network protocol.
 
 # Ego-centric Data 🙆‍♂️
+
+## Before getting started
+
+- It's important to understand why this software can be used to collect SN data. 
+
+- Social network data is inherently complex, and nested, and therefore, it is important to understand the different levels of data _needed_ to be collected
+
+- For Social net work data there different of data types:
+    - **Ego data** questions about the ego (participant level)
+    - **Alter data** questions about the alters (SN members network level)
+    - **Alter-alter data** questions about the relationships among the alters (SN members network level)
+    - **Dyadic data** questions about the relationship between the ego and the alters (SN members network level)
+    - **Edge data** questions about the relationship between the alters (SN members network level)
+    - **Tie Strength Data** –  strength or nature of relationships (e.g., frequency of contact, emotional closeness, support).
+    - **Multiplex Data** – multiple types of relationships between ego and alters or between alters themselves (e.g., family, friendship, co-worker).
+    - **Two-mode data** – two different types of nodes (e.g., alters and organizations).
+    
+    
+- REDCap, IMHO is the golden standard to collect participant level data, but it does not support when the data is nested (e.g., alters, alter-alter data)
 
 ## Ego-centric Data Types
 
@@ -107,7 +125,7 @@ p1 + p2
 
 ## What is Network Canvas
 
-Network Canvas (NC) is a data collection software, specifically tailored to handle *social network data*. It has different capability to support the major components of personal network projects as well as the flexibility to adapt to different study designs.
+Network Canvas (NC) is a data collection software, specifically tailored to handle those critical *social network data* components discussed earlier. It has different capability to support the major components of personal network projects as well as the flexibility to adapt to different study designs.
 
 -   It is free and open source.
 
