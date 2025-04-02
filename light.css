@@ -1,10 +1,22 @@
 /* change size of title slide*/
 
 .title {
-  font-size: 70px !important;
+  font-size: 60px !important;
   color: black !important;
 }
 
+/* change size of sub title slide*/
+.subtitle {
+  font-size: 45px !important;
+  color: black !important;
+}
+
+/* change size of author */
+
+.quarto-title-author-name {
+  font-size: 40px;
+  color: black !important;
+}
 
 /* change size of title date*/
 .date {
