@@ -1,0 +1,282 @@
+[
+  {
+    "objectID": "NC_for_Social_Network_Data_collection.html#objectives",
+    "href": "NC_for_Social_Network_Data_collection.html#objectives",
+    "title": "Data Collection Methods: Using Network Canvas for Social Network Data Collection",
+    "section": "Objectives",
+    "text": "Objectives\n\nUnderstand the different major components of ego-centric (personal network) data.\nUnderstand Network canvas, as a data collection software for social network data.\nUnderstand the major features and components of Network Canvas.\nLive demonstration of a Network Canvas Social Network protocol."
+  },
+  {
+    "objectID": "NC_for_Social_Network_Data_collection.html#before-getting-started",
+    "href": "NC_for_Social_Network_Data_collection.html#before-getting-started",
+    "title": "Data Collection Methods: Using Network Canvas for Social Network Data Collection",
+    "section": "Before getting started",
+    "text": "Before getting started\n\nIt’s important to understand why this software can be used to collect SN data.\nSocial network data is inherently complex, and nested, and therefore, it is important to understand the different levels of data needed to be collected\nFor Social net work data there different of data types:\n\nEgo data questions about the ego (participant level)\nAlter data questions about the alters (SN members network level)\nAlter-alter data questions about the relationships among the alters (SN members network level)\nDyadic data questions about the relationship between the ego and the alters (SN members network level)\nEdge data questions about the relationship between the alters (SN members network level)\nTie Strength Data – strength or nature of relationships (e.g., frequency of contact, emotional closeness, support).\nMultiplex Data – multiple types of relationships between ego and alters or between alters themselves (e.g., family, friendship, co-worker).\nTwo-mode data – two different types of nodes (e.g., alters and organizations).\n\nREDCap, IMHO is the golden standard to collect participant level data, but it does not support when the data is nested (e.g., alters, alter-alter data)"
+  },
+  {
+    "objectID": "NC_for_Social_Network_Data_collection.html#ego-centric-data-types",
+    "href": "NC_for_Social_Network_Data_collection.html#ego-centric-data-types",
+    "title": "Data Collection Methods: Using Network Canvas for Social Network Data Collection",
+    "section": "Ego-centric Data Types",
+    "text": "Ego-centric Data Types\n\nEgo-centric (also called personal network) data, typically has three main data types:\n\n\nEgo-level dataAlter-level dataAlter-alter data\n\n\nData about the respondent (called ego). which consists of each row as the participant/ego response, and each column represents a variable or characteristic of the ego (e.g., egos age, BMI, smoking status, etc.)\n\n\n\n\n\n\n\nWhich consist of the egos nominated alters (e.g, peers, friends, etc.) characteristics (e.g., alter age, ethnicity, etc.) and ego-alter dynamics (e.g., closeness to alter, frequency of meeting, shared a meal together etc.)\n\n\n\n\n\n\n\nData that includes the alter-alter ties as reported by ego. This is also called an “edge list” or can be described as an adjacency matrix. For example:\n\nalter 1 and alter 2 know each other.\nalter 1 and alter 2 meet when ego is not there.\nalter 1 and alter 2 have shared a meal together."
+  },
+  {
+    "objectID": "NC_for_Social_Network_Data_collection.html#data-collection-software",
+    "href": "NC_for_Social_Network_Data_collection.html#data-collection-software",
+    "title": "Data Collection Methods: Using Network Canvas for Social Network Data Collection",
+    "section": "Data Collection Software",
+    "text": "Data Collection Software\n\nSocial network analysis (SNA) is a growing field and there are many different data collection software, which you can check out a list of different data collect software here.\nHowever, for today we will focus on Network Canvas."
+  },
+  {
+    "objectID": "NC_for_Social_Network_Data_collection.html#what-is-network-canvas",
+    "href": "NC_for_Social_Network_Data_collection.html#what-is-network-canvas",
+    "title": "Data Collection Methods: Using Network Canvas for Social Network Data Collection",
+    "section": "What is Network Canvas",
+    "text": "What is Network Canvas\nNetwork Canvas (NC) is a data collection software, specifically tailored to handle those critical social network data components discussed earlier. It has different capability to support the major components of personal network projects as well as the flexibility to adapt to different study designs.\n\nIt is free and open source.\nIt is intuitive and user friendly.\nTheir development community is open to feedback and suggestions.\n\nyou also can communicate with their development team through their community forums.\n\nIt works well with major data wrangling software, like Python and R."
+  },
+  {
+    "objectID": "NC_for_Social_Network_Data_collection.html#major-components-of-network-canvas",
+    "href": "NC_for_Social_Network_Data_collection.html#major-components-of-network-canvas",
+    "title": "Data Collection Methods: Using Network Canvas for Social Network Data Collection",
+    "section": "Major Components of Network Canvas",
+    "text": "Major Components of Network Canvas\nNetwork Canvas has three main programs:\n\nArchitectInterviewerServer\n\n\nwhich is the software that allows primary investigators and researchers the ability to build their Social Network protocol. (e.g., this is where the researcher can define the different data types and the different questions)\n\n\n\n\n\n\n\nwhich is the software that helps deploy and run the network canvas interview. (e.g., This is where the research assistant and the participant complete the questionnaires)\n\n\n\n\n\n\n\nThe central hub software to keep multiple network canvas protocols updated if you are running a major, multi-site study.\n\nThe Network Canvas (NC) team is expecting to launch a “studio” version, to be able to support for longitudinal project designs in about 2-3 years, so this software workflow may change.\nFor this lesson, we will not be talking about server today, as the typical way for social network researchers to use Network Canvas is through the architect and interviewer software."
+  },
+  {
+    "objectID": "NC_for_Social_Network_Data_collection.html#components-of-personal-network-research",
+    "href": "NC_for_Social_Network_Data_collection.html#components-of-personal-network-research",
+    "title": "Data Collection Methods: Using Network Canvas for Social Network Data Collection",
+    "section": "Components of Personal Network Research",
+    "text": "Components of Personal Network Research\n\n\nWhen collecting personal network data, there is a few fundamental principles that researchers are interested in collecting when running SN projects:\nThe way that network canvas is structured, it tried to capture social network data in its most fundamental way, by capturing nodes and edge attributes. To collect this type of data, there are generally 4 main components needed:\n\n\n\nEgo FormNamesAlter-egoSocio-gram\n\n\n\nA survey that can collect ego characteristics, such as, age, BMI, smoking status, etc.)\nThis type of data can be collected via NC, but it can also be collected through other survey software. My favorite, in my opinion the golden standard, is [REDCap.](https://www.project-redcap.org/)\n\nKeep in mind that REDCap does not really support network data like NC does, but it is great when you’re interested in collecting ego data.\n\nfor example: mental health scales like MACVS, PTSD scales, demographic information.\n\n\n\n\n\n\n\n\n\n\nalso called Name Generator:\n\nNC ability to produce alters, that the ego can nominate in their personal network.\nThis allows for building out the personal networks. There are different name generator form types (depending on your data needs), such as quick add per network, quick add per alter, using roasters for recall etc.)\n\nFor example: “Think about the people you know: Who are the people in which you discuss personal matters with? List up to 13 individuals.”\n\n\n\n\n\n\n\n\n\nAlso called Alter Ego Attributes:\n\nNC ability to capture alter-ego dynamics. (e.g., closeness, frequency of contact, etc.)\nThis is also where the researcher has the ability to capture ordinal categorical type of data. (e.g., how close is the ego to the alter? Very close, somewhat close, not close at all)\n\n\n\n\n\n\n\n\n\nThis allows for the participant and researcher, to describe and build the layout of their personal networks.\nNC allows for different types alter-alter tie connections.\n\nFor example, the tie between two alters represents that the alters “know” each other, or “hang out” together when the ego is not there, or “have fought” with each other.\nA sociogram is one type of method to building personal networks, but there are other types that are supported by network canvas, such as dyad-census (which goes through every possible dyad connection to build the ties)"
+  },
+  {
+    "objectID": "NC_for_Social_Network_Data_collection.html#questions-to-consider-when-building-a-protocol",
+    "href": "NC_for_Social_Network_Data_collection.html#questions-to-consider-when-building-a-protocol",
+    "title": "Data Collection Methods: Using Network Canvas for Social Network Data Collection",
+    "section": "Questions to consider when building a protocol",
+    "text": "Questions to consider when building a protocol\n\nThis largely depends on your research of interest; however, you can collect different alter attributes, such as, egos perception of their alters age, emotional closeness to alter, etc.\nNC is very flexible and can almost support any type of question of interest.\nAdditionally, when building a network protocol, there needs to be some forethought about the type of data you might want to collect. For example:\n\nWhat are some of the data types you are expecting to collect? (e.g., ordinal, categorical, text)\nWhat input controls (more on that later) would be best to use to visualize the protocol?\n\nYou can ask questions like:\n\ncontact frequency\nperceived age\ndisclosure of HIV status\nlikelihood to talk about PrEP in the next 6 months"
+  },
+  {
+    "objectID": "NC_for_Social_Network_Data_collection.html#input-control",
+    "href": "NC_for_Social_Network_Data_collection.html#input-control",
+    "title": "Data Collection Methods: Using Network Canvas for Social Network Data Collection",
+    "section": "Input control",
+    "text": "Input control\nInput control is the ability to modify the way in which the data is presented and how it will collected.\n\nFor example, you can use a calendar type input control for age, or a text field for name."
+  },
+  {
+    "objectID": "NC_for_Social_Network_Data_collection.html#variable-types",
+    "href": "NC_for_Social_Network_Data_collection.html#variable-types",
+    "title": "Data Collection Methods: Using Network Canvas for Social Network Data Collection",
+    "section": "Variable Types",
+    "text": "Variable Types\n\nWhen collecting data, really in any human subject research, considering the type of data you are collecting is important.\nNetwork Canvas has support for many types of variables:\n\nText Basic short text string,\nNumber Basic whole number (integer),\nOrdinal Ordered categorical data, where each value is described by a label and a value. Only supports single values,\nCategorical Unordered categorical data where each value is described by a label and a value. Supports multiple values.\nBoolean True or False values,\nLayout X/Y coordinate values, normalized between 0 and 1 in each axis.\nDateTime Date variable capable of storing resolution down to the day.\nScalar A continuous floating point number between 0 and 1"
+  },
+  {
+    "objectID": "NC_for_Social_Network_Data_collection.html#edge-types",
+    "href": "NC_for_Social_Network_Data_collection.html#edge-types",
+    "title": "Data Collection Methods: Using Network Canvas for Social Network Data Collection",
+    "section": "Edge Types",
+    "text": "Edge Types\n\nIn personal network research, edges describe the relationship between alters.\nNetwork Canvas supports different edge types, which can be used to capture different types of relationships between alters."
+  },
+  {
+    "objectID": "NC_for_Social_Network_Data_collection.html#recommendations-for-creating-a-protocol",
+    "href": "NC_for_Social_Network_Data_collection.html#recommendations-for-creating-a-protocol",
+    "title": "Data Collection Methods: Using Network Canvas for Social Network Data Collection",
+    "section": "Recommendations for creating a protocol",
+    "text": "Recommendations for creating a protocol\nTypical creation of a network canvas protocol is:\n\ncreate a Stage based on whether you are collecting Ego, Node, or Edge data.\nInclude a stage name (e.g., Ego Form, Name Generator, etc.)\nCreate a name generator to collect alter data.\nCreate variables.\nAdd a prompt (or a script) for that variable.\nSelect an input control (calendar, text field, etc.)\n\nYou can check out the Network Canvas recommended protocol building workflow here."
+  },
+  {
+    "objectID": "NC_for_Social_Network_Data_collection.html#burden-reduction",
+    "href": "NC_for_Social_Network_Data_collection.html#burden-reduction",
+    "title": "Data Collection Methods: Using Network Canvas for Social Network Data Collection",
+    "section": "Burden Reduction",
+    "text": "Burden Reduction\n\nIn all human subject research (HSR), especially in epidemiological designs with complicated protocols, there’s always a give-and-take regarding burden level.\nThis is something to always keep in mind when conducting HSR, and therefore important to implement tips in any protocol workflow.\nTactics to reduce protocol burden includes skip logic:"
+  },
+  {
+    "objectID": "NC_for_Social_Network_Data_collection.html#general-protocol-process-workflow",
+    "href": "NC_for_Social_Network_Data_collection.html#general-protocol-process-workflow",
+    "title": "Data Collection Methods: Using Network Canvas for Social Network Data Collection",
+    "section": "General Protocol Process Workflow 🔄",
+    "text": "General Protocol Process Workflow 🔄\nGenerally, when running the protocol with a potential participant, the process would look something like this:\n\n\n\n\nThis short demo shows the general workflow characteristics discussed today on how to collect social network data that includes: name generator, dyadic dynamic questionnaire, (closeness frequency of meeting), and the ability to build alter-alter ties, or the sociograms."
+  },
+  {
+    "objectID": "NC_for_Social_Network_Data_collection.html#resources",
+    "href": "NC_for_Social_Network_Data_collection.html#resources",
+    "title": "Data Collection Methods: Using Network Canvas for Social Network Data Collection",
+    "section": "Resources",
+    "text": "Resources\n\nThere are many great resources for collecting sound protocol measures using NC, one of them being directly from the NC team:\n\nConducting Personal Network Research with Network Canvas\nWorking with Network Canvas data in R\n\nAnd others resource from Social network scientists:\n\nEgo Centric Network Analysis with R\nNetwork Visualization using R"
+  },
+  {
+    "objectID": "NC_for_Social_Network_Data_collection.html#a-network-canvas-protocol-example",
+    "href": "NC_for_Social_Network_Data_collection.html#a-network-canvas-protocol-example",
+    "title": "Data Collection Methods: Using Network Canvas for Social Network Data Collection",
+    "section": "A Network Canvas Protocol Example",
+    "text": "A Network Canvas Protocol Example\nA two mode approach\n\n\nWe are going to be looking at a Network Canvas Protocol example that was built for the LatiNET study.\nLatiNET is a multi-level study using a social network approach to examine how COVID-19 misinformation and conspiracy theories impact Latino vaccine hesitancy across 5 domains:\n\nFriends\nFamily\nWork\nHealth Services\nInfluences\n\nLatiNET covers the social network project fundamentals, like name generators, and questionnaires regarding the relationships with nominated alters.\n\nPersonal network data typically measures data at the “micro-level” (e.g., between dyads), and with these relationships, we are able to make inferences about about these relationships at the “macro-level”\nA two-mode approach, describes ties between two nodes at different levels of analysis. In other words, affiliation or relationship to structures. So nodes/egos affiliation to their macro structure (in the LatiNET case, health services, influences (e.g., political, social etc.) and community channels.\nA two mode approach helps researchers understand the macro-micro dynamics and help control for societal structures that impact observed relationships, like structural racism.\n\nin the LatiNET study, a two-mode approach helps us understand how egos affiliation or relationship with different media outlets may impact their relationship with vaccines.\n\n\nThis is the idea of network data, in which individuals are “nested” within larger structures, and those larger structures are nester within even larger structures."
+  },
+  {
+    "objectID": "NC_for_Social_Network_Data_collection.html#overview",
+    "href": "NC_for_Social_Network_Data_collection.html#overview",
+    "title": "Data Collection Methods: Using Network Canvas for Social Network Data Collection",
+    "section": "Overview",
+    "text": "Overview\nToday you learned:\n\nThe basics of personal network data types.\nData collection methods in personal network research.\nA gentle introduction on how to build a NC protocol.\nDifferent components of the Network Canvas software.\nRecommended workflow for build a social network protocol."
+  },
+  {
+    "objectID": "NC_for_Social_Network_Data_collection.html#references-and-acknowledgements",
+    "href": "NC_for_Social_Network_Data_collection.html#references-and-acknowledgements",
+    "title": "Data Collection Methods: Using Network Canvas for Social Network Data Collection",
+    "section": "References and Acknowledgements 📚",
+    "text": "References and Acknowledgements 📚\n\nNetwork Canvas Team Resources\nEgo Centric Network Analysis with R\nNetwork Visualization in R: Using ggraph and graphlayouts\nggraph: A grammar of graphics for relational data\nR4SNA\nEgocentric Network Analysis: Foundations, Methods, and Models\nConducting Personal Network Research: A Practical Guide"
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#objectives",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#objectives",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "Objectives",
+    "text": "Objectives\n\nUnderstand the difference between ego-centric (personal network) and sociocentric (whole network) designs.\nUnderstand sociocentric data structures and how they differ from personal network data.\nLearn how to design sociocentric data collection protocols in Network Canvas.\nRecognize challenges and burden reduction strategies in whole network studies."
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#before-we-get-started",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#before-we-get-started",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "Before we get started",
+    "text": "Before we get started\n\nSocial network data is inherently complex and nested, and sociocentric (whole network) designs amplify this complexity by attempting to account for an entire network within a clear boundary (e.g., a school, clinic, organization, or friendship networks).\nSimilar to with personal networks, it is important to understand the different data types needed to be collected, but now at the level of a bounded population rather than a single ego. The data types needed to analyze sociocentric data are similar to those in personal networks with the added caveat that they must be collected for all (or at least almost all) network members and their ties.\nFor Sociocentric / Whole Network data there are similar data types:\n\nNode (actor) data – questions about each actor in the bounded network.\nEdge (tie) data – questions about the relationships between any pair of actors.\nDyadic data – questions about the relationship between specific ordered pairs of actors (directed ties).\nTie Strength Data – strength or nature of relationships (e.g., frequency of contact, emotional closeness, collaboration intensity).\nMultiplex Data – multiple types of relationships between the same pair of actors (e.g., friend, co-worker, advice partner).\nTwo-mode data – ties between actors and organizations, events, or settings (e.g., membership, attendance, use of services)."
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#ego-centric-vs-sociocentric-designs",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#ego-centric-vs-sociocentric-designs",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "Ego-centric vs Sociocentric Designs",
+    "text": "Ego-centric vs Sociocentric Designs\n\nEgo-centric (personal) networks:\n\nFocus on one focal respondent (ego) and their nominated alters.\nAlters are unique to each ego; alter–alter ties are limited to alters named by the same ego.\nNetworks from different egos typically do not overlap analytically… even if they might in real life.\n\nSociocentric (whole) networks:\n\nFocus on a bounded population (e.g., all students in a class, all staff in a clinic, all organizations in a coalition).\nAim to observe all (or most) nodes and ties within that boundary.\nOverlap is expected, and the whole network is analyzed as a single structure."
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#when-to-use-which",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#when-to-use-which",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "When to use which?",
+    "text": "When to use which?\n\nUse ego-centric designs when:\n\nYou are primarily interested in individual outcomes and their immediate personal networks (support, risk, behaviors).\nPopulation boundaries are fuzzy or too large to account for.\nYou have limited resources and cannot feasibly survey everyone.\nYou may be sampling a sensitive population, and anonymity is a concern.\n\nUse sociocentric designs when:\n\nYou are interested in global network structure (density, centralization, communities, components).\nYou want to identify key players, isolates, bridging , or subgroups within a defined setting.\nYour intervention or research question targets the entire setting or system (e.g., a school, clinic, coalition).\n\n\nYour research question here matters… having a clear and solidified research question and methodological approach in mind helps clarify the appropriateness of the design and the data collection strategy."
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#data-structures-in-sociocentric-networks",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#data-structures-in-sociocentric-networks",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "Data Structures in Sociocentric Networks",
+    "text": "Data Structures in Sociocentric Networks\n\nNode or Individual level Data:\n\nCharacteristics of each actor in the bounded network (e.g., age, role, department, years in organization).\nSimilar to ego-level data, but now collected for all members of the population.\nCan also be collected in other applications, like REDCap (more on that later)\n\nEdge / Tie Data:\n\nPresence/absence of a tie between any pair of actors.\nTie attributes such as strength, frequency, direction, and type (e.g., advice, frequency of PrEP conversation, likelihood to distribute an HIVST).\n\nTwo-mode / Multilevel Data:\n\nLinks between actors and higher-level structures (e.g., organizations, services, events, neighborhoods).\nUseful for understanding how structural contexts shape relationships and information flow.\nThis type of data can also be collected in REDCap. However, in a social network design you’re usually interested in collecting data on the ties between actors, which is tranditionally not suported in a REDCap project."
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#personal-vs-whole-network-analysis",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#personal-vs-whole-network-analysis",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "Personal vs Whole Network analysis",
+    "text": "Personal vs Whole Network analysis\n\nA whole network can be visualized as a single network with all actors and their ties.\nSociocentric designs treat the entire network as the unit of analysis.\n\n\n\n\n\n\n\nEgo-centric data can be visualized as the actor (ego) their direct ties (alters) and ties among those alters (alter–alter).\nEgo-centric designs treat the ego and their local neighborhood as the unit of analysis."
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#design-features-of-whole-sociocentric-network-studies",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#design-features-of-whole-sociocentric-network-studies",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "Design Features of Whole (Sociocentric) Network Studies",
+    "text": "Design Features of Whole (Sociocentric) Network Studies\n\nBounded Population\n\nClearly define who is “in” the network (e.g., all 10th graders in a school, all staff in Department of Public Health Sciences, all recruited friends within a closed network).\nThis boundary definition is crucial and distinguishes sociocentric from ego-centric designs.\n\nSampling and Participation\n\naim for a high or all participation rates, since missing nodes or ties can bias whole-network measures.\nThis network design requires pre planning of recruitment strategies that fit the setting in which your sampling from (e.g., in-class surveys, staff meetings, online sessions).\n\nTie Definition\n\nClearly define what is a “tie” (e.g., “talk to about health”, “work together weekly”, “feel close to”, “likelihood to distribute an HIVST Kit”).\nTies can be also be directed (A → B) or undirected (A–B)."
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#importance-of-fundamentals",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#importance-of-fundamentals",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "Importance of fundamentals",
+    "text": "Importance of fundamentals\n\nit’s important to discuss these fundametal concepts because ultimately a sociocentric design is not just a different way to collect data, but a fundamentally different approach to understanding social networks and analysis. The design choices you make in how you define the network boundary, ties, and manage data collection have implications for the types of analyses you can conduct and the insights you can gather about those network dynamics."
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#how-do-you-collect-node-data-in-the-network",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#how-do-you-collect-node-data-in-the-network",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "How do you collect node data in the network?",
+    "text": "How do you collect node data in the network?\nthere are different ways in which one can generate nodes in the network, in SNA, we typically call these “nodes” and these “nodes” can be generated using a “name generator”\n\nFor personal networks\n\nyou usually ask the ego to name their alters (e.g., “In the past 6 months, provide the initials of different people, including men and women, with whom you had vaginal or anal sex, even if only one time”\n\nFor Sociocentric networks\n\nyou can take a “roaster-based” approach. Which lists all actors in a bounded population (e..g, friendship network 01), and then ask respondents to indicate which of those actors they have a particular relationship with (e.g., “From this list, who do you regularly talk to about health?”).\nThis approach is usually used to avoid recall error.\n\n\n\n\n\n\n\n\nNote\n\n\nin a sociocentric design it’s important to ask yourself if everyone complete the survey? if not, how do we handle missing data?"
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#what-is-network-canvas",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#what-is-network-canvas",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "What is Network Canvas?",
+    "text": "What is Network Canvas?\n\nNetwork Canvas is a data collection software specifically tailored to handle social network data, including:\n\nNode attributes (actors).\nEdge attributes (ties).\nLayout and two-mode data.\n\nFor sociocentric designs, NC can:\n\nImport and manage rosters of nodes.\n\ncan also support normal name generator.\n\nCollect tie data across the entire bounded network.\nSupport multiple edge types (e.g., advice, friendship, collaboration)."
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#what-is-network-canvas-cont",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#what-is-network-canvas-cont",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "What is Network Canvas? (cont)",
+    "text": "What is Network Canvas? (cont)\n\nIt is free and open source.\nIt is intuitive and user friendly.\nTheir development community is open to feedback and suggestions.\n\nyou also can communicate with their development team through their community forums.\n\nIt works well with major data wrangling software, like Python and R."
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#major-components-of-network-canvas",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#major-components-of-network-canvas",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "Major Components of Network Canvas",
+    "text": "Major Components of Network Canvas\nNetwork Canvas has three main programs:\n\nArchitect: for building protocols and surveys.\nInterviewer: for deploying and running interviews.\nFresco: for managing multi-site or multi-wave projects and centralizing data"
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#major-components-of-network-canvas-1",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#major-components-of-network-canvas-1",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "Major Components of Network Canvas",
+    "text": "Major Components of Network Canvas\n\nArchitectInterviewerFresco\n\n\n\nUsed to build whole network protocols:\n\nImport or define a roster of actors.\nSpecify node variables (e.g., role, department).\nDefine edge types and tie-related questions.\n\n\n\n\n\n\n\n\n\n\nUsed to deploy and run sociocentric network interviews:\n\nPresent rosters to respondents.\nCapture ties and their attributes (direction, strength, type).\nOptionally use layout stages to build sociograms.\n\n\n\n\n\n\n\n\n\n\nUsed to be called “server” now called Fresco, which is NC data collection on a web browser!\nCan be used to manage multi-site or multi-wave sociocentric projects:\n\nKeep protocols synchronized across teams and locations.\nCentralize data from many respondents."
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#components-of-a-sociocentric-network-canvas-protocol",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#components-of-a-sociocentric-network-canvas-protocol",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "Components of a Sociocentric Network Canvas Protocol",
+    "text": "Components of a Sociocentric Network Canvas Protocol\n\nRoster / Node List StageTie stage\n\n\n\nDefine the bounded population:\n\nPre-load a node list representing all actors in the network.\nInclude key node attributes (e.g., role, unit, site) as variables.\n\n\n\n\n\n\n\n\n\n\nUse roster-based questions to capture ties:\n\nExample: “From this list, who do you regularly talk to about [topic]?”\nAllow respondents to select multiple actors from the roster."
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#variable-and-edge-types-in-sociocentric-protocols",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#variable-and-edge-types-in-sociocentric-protocols",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "Variable and Edge Types in Sociocentric Protocols",
+    "text": "Variable and Edge Types in Sociocentric Protocols\n\nVariable Types (similar to personal networks):\n\nText, Number, Ordinal, Categorical, Boolean, Layout, DateTime, Scalar.\nWe use node variables (e.g., PrEP status, is a smoker) for actor attributes and edge variables for tie attributes (e.g., frequency of contact, emotional closeness).\n\nEdge Types:\n\nDirected ties (e.g., “Who do you go to for advice?”).\nUndirected ties (e.g., “Who are your close friends?”).\nBinary vs ordinal values ties (presence/absence vs strength/frequency)"
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#steps-to-build-a-whole-network-protocol-in-architect",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#steps-to-build-a-whole-network-protocol-in-architect",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "Steps to Build a Whole Network Protocol in Architect",
+    "text": "Steps to Build a Whole Network Protocol in Architect\n\n1. Define the boundary and roster:\n\nDecide who belongs in the network and create a roster.\nImport actor IDs and attributes as node variables.\n\n2. Specify tie definitions and edge types:\n\nDecide what “counts” as a tie and whether it is directed/undirected, binary/valued.\nCreate edge variables and edge types that reflect your research questions.\n\n3. Design stages:\n\nRoster / node stages to display actors.\nEdge elicitation stages (roster-based, sociograms, or dyad-census style).\n\n4. Choose input controls:\n\nUse controls that make repetitive tasks easier (e.g., checkboxes, multi-select lists, drag-and-drop).\nConsider participants’ comfort level with technology and group size."
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#burden-reduction-in-whole-network-projects",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#burden-reduction-in-whole-network-projects",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "Burden Reduction in Whole Network Projects",
+    "text": "Burden Reduction in Whole Network Projects\n\nWhole network surveys can be burdensome, especially when networks are large.\nMethods to reduce inherent social network burden:\n\nLimit the number of tie types asked per interview.\nUse filters to ask detailed questions only for selected ties (e.g., “closest” or “most important”).\nImplement skip logic to bypass irrelevant questions and stages."
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#general-sociocentric-protocol-workflow",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#general-sociocentric-protocol-workflow",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "General Sociocentric Protocol Workflow 🔄",
+    "text": "General Sociocentric Protocol Workflow 🔄\n\nAt a high level, running a sociocentric protocol might involve:\n\nIntroducing the study and clarifying the network boundary.\nConfirming or updating roster information (e.g., verifying who is present).\nAsking about ties using roster-based or sociogram stages.\nCollecting additional information on a subset of ties or actors.\nSaving and securely managing network data for later analysis in R or Python.\n\n\n\n\n\n\nThis short demo shows the general workflow characteristics discussed today on how to collect social network data that includes: name generator, dyadic dynamic questionnaire, (closeness frequency of meeting), and the ability to build alter-alter ties, or the sociograms."
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#what-sociocentric-data-allows-us-to-collect",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#what-sociocentric-data-allows-us-to-collect",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "What sociocentric data allows us to collect",
+    "text": "What sociocentric data allows us to collect\n\nWhole-network measures:\n\nDensity, average path length, clustering.\n\nNode-level measures:\n\nDegree, in-degree, out-degree, betweenness, centrality.\n\nSub-structures:\n\nComponents, communities, cliques, cores, and bridges between communities.\n\nThese measures rely on having information about all (or nearly all) actors and their ties, which is why careful sociocentric data collection is critical."
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#micromacro-link-and-two-mode-designs",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#micromacro-link-and-two-mode-designs",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "Micro–Macro Link and Two-Mode Designs",
+    "text": "Micro–Macro Link and Two-Mode Designs\n\nSociocentric data support analyses that connect:\n\nMicro-level relationships (who is connected to whom).\nMacro-level structures (clusters, centralization, organizational context).\n\nTwo-mode sociocentric designs:\n\nActors linked to events, organizations, or settings.\nThis helps us explain how affiliation patterns and structures shape behaviors and outcomes (e.g., how being frequenting a social venue influences HIV risk)."
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#overview",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#overview",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "Overview",
+    "text": "Overview\nToday you learned:\n\nSociocentric (whole network) designs focus on bounded populations, aiming to capture all actors and their ties.\nCompared to ego-centric designs, sociocentric studies:\n\nRequire clearer boundary definitions and higher participation.\nEnable analyses of global network structure and positions.\n\nHow Network Canvas supports sociocentric data collection through:\n\nRoster-based stages,\nFlexible edge and variable types,\nVisual sociogram and layout tools.\n\nThoughtful protocol design and burden reduction strategies are essential for collecting high-quality whole network data."
+  },
+  {
+    "objectID": "nc_for_sociocentric_data_collection_2026_03_02.html#references-and-acknowledgements",
+    "href": "nc_for_sociocentric_data_collection_2026_03_02.html#references-and-acknowledgements",
+    "title": "Data Collection Methods: Using Network Canvas for Sociocentric (Whole Network) Data Collection",
+    "section": "References and Acknowledgements 📚",
+    "text": "References and Acknowledgements 📚\n\nNetwork Canvas Team Resources\nEgo Centric Network Analysis with R\nNetwork Visualization in R: Using ggraph and graphlayouts\nggraph: A grammar of graphics for relational data\nR4SNA\nEgocentric Network Analysis: Foundations, Methods, and Models\nConducting Personal Network Research: A Practical Guide"
+  }
+]
